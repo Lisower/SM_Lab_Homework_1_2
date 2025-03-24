@@ -24,6 +24,9 @@ class FormSubmitter {
         const response = await fetch('https://formcarry.com/s/REb9wxs4tJK', {
           method: 'POST',
           body: formData,
+          headers: {
+            'Accept': 'application/json',
+          },
           signal: this.controller.signal
         });
         
