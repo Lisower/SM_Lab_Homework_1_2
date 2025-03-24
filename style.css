@@ -1,0 +1,131 @@
+html, body {
+    background-color:rgb(108, 177, 235);
+    color:rgb(14, 2, 67);
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(45, 105, 236);
+    padding: 10px;
+    height: 110px;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+
+header p {
+    margin-left: 5px;
+    font-size: 36px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(14, 2, 67);
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    top: 25px;
+}
+
+.nav_header{
+    background-color: rgb(45, 105, 236);
+}
+
+nav {
+    background-color: rgb(45, 105, 236);
+    border: 3px solid rgb(14, 2, 67);
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+nav a {
+    margin: 5px;
+    color: rgb(14, 2, 67);
+    font-size: 24px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgb(108, 177, 235);
+    color:rgb(14, 2, 67);
+}
+
+.ul_div {
+    border: 3px solid rgb(14, 2, 67);
+    padding: 10px;
+    margin: 10px;
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+ul img {
+    width: 400px;
+}
+
+ul li {
+    margin: 10px;
+}
+
+.table_div {
+    border: 3px solid rgb(14, 2, 67);
+    padding: 10px;
+    margin: 10px auto;
+}
+
+table {
+    border: 3px solid rgb(14, 2, 67);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: rgb(14, 2, 67);
+    color: rgb(108, 177, 235);
+    border: 3px solid rgb(14, 2, 67);
+}
+
+td {
+    border: 3px solid rgb(14, 2, 67);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(189, 217, 240);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(91, 206, 241);
+}
+
+form {
+    border: 3px solid rgb(14, 2, 67);
+    padding-bottom: 20px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#anchor {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(45, 105, 236);
+    padding: 10px;
+    height: 110px;
+}
+
+footer p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(14, 2, 67);
+    margin-left: 30px;
+    margin-top: 30px;
+}

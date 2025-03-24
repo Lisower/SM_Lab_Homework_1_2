@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>ЗАДАНИЕ 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="d-flex flex-column flex-md-row">
+            <header class="col-12 col-md-5">
+                <div class="d-flex row">
+                    <img src="./logo.png">
+                    <p>Сайт домашней работы</p>
+                </div>
+            </header>
+            <div class="nav_header col-12 col-md-7">
+                <nav class="d-flex col-12 flex-column flex-md-row justify-content-end">
+                    <a href="http://www.kubsu.ru" title="КубГУ" target="_blank">КубГУ</a>
+                    <a href="https://html5book.ru/html-html5/" title="HTML5 Руководство" target="_blank">HTML5 Руководство</a>
+                    <a href="https://ru.wikipedia.org/wiki/HTML" title="Страница о HTML на Вики" target="_blank">Страница о HTML на Вики</a>
+                </nav>
+            </div>
+        </div>
+
+        <main class="d-flex flex-column align-items-center">
+
+            <h1>
+                ЗАДАНИЕ 4
+            </h1>
+
+            <div class="ul_div order-2 order-md-1 col-12 col-md-5">
+
+                <h1>
+                    Список гиперссылок
+                </h1>
+
+                <ul>
+                    <li><a href="http://www.kubsu.ru" target="_blank">КубГУ</a></li>
+                    <li><a href="https://www.kubsu.ru" target="_blank">КубГУ</a></li>
+                    <li><a href="https://www.kubsu.ru" title="КубГУ" target="_blank"><img src="image_KubSU.jpg" alt="КубГУ"></a></li>
+                    <li><a href="/Homework_1/Inner_page.html" target="_blank">Внутренняя страница</a></li>
+                    <li><a href="#anchor">Ссылка на фрагмент текущей страницы</a></li>
+                    <li><a href="Inner_page.html?p1=a&p2=b&p3=c" target="_blank">Ссылка с тремя параметрами</a></li>
+                    <li><a href="./index.html?id=anchor">Ссылка c параметром id</a></li>
+                    <li><a href="about/about.html" target="_blank">На страницу about</a></li>
+                    <li><a href="level_1/Page_level_1.html" target="_blank">На страницу уровня 1</a></li>
+                    <li><a href="level_1/level_2/Page_level_2.html" target="_blank">На страницу уровня 2</a></li>
+                    <li>О сайте можно прочитать на <a href="about/about.html" target="_blank">странице about</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/HTML#Структура_HTML-документа" target="_blank">Ссылка на фрагмент другого сайта</a></li>
+                    <li>
+                        <img src="image.jpg" alt="Фигуры" usemap="#figures">
+                        <map name="figures">
+                            <area shape="rect" coords="32,30,369,173" href="https://ru.wikipedia.org/wiki/Прямоугольник" title="Прямоугольник" target="_blank" alt="Прямоугольник">
+                            <area shape="circle" coords="199,289,91" href="https://ru.wikipedia.org/wiki/Круг" title="Круг" target="_blank" alt="Круг">
+                        </map>
+                    </li>
+                    <li><a href="">Пустой href</a></li>
+                    <li><a>https://kubsu.ru/</a></li>
+                    <li><a href="Inner_page.html" rel="nofollow" target="_blank">Ссылка с запретом для перехода поисковикам</a></li>
+                    <li><!--noindex--><a href="No_index.html" target="_blank">Страница с запретом индексации</a><!--/noindex--></li>
+                    <li>
+                        <ol>
+                            <li><a href="http://www.kubsu.ru" title="КубГУ" target="_blank">Ссылка 1</a></li>
+                            <li><a href="https://html5book.ru/html-html5/" title="HTML5 Руководство" target="_blank">Ссылка 2</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/HTML" title="Страница о HTML на Вики" target="_blank">Ссылка 3</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="ftp://user123:password123@site.ru/userfiles/file.txt" target="_blank">Ссылка на файл с ftp-сервера</a></li>
+                </ul>
+
+            </div>
+
+            <div class="table_div order-1 order-md-2 col-12 col-md-5">
+
+                <table>
+
+                    <h1>Таблица</h1>
+    
+                    <tr>
+                        <th>Столбец 1</th>
+                        <th>Столбец 2</th>
+                        <th>Столбец 3</th>
+                        <th>Столбец 4</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Объединённые ячейки</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td rowspan="3">Объединённые ячейки</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="2">Объединённые ячейки</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Объединённые ячейки</td>
+                    </tr>
+    
+                </table>
+
+            </div>
+
+            <form class="order-3 col-12 col-md-5" action="/" method="POST">
+                
+                <h1>Форма</h1>
+
+                <label>
+                    ФИО:<br>
+                    <input name="field-name-1"
+                    placeholder="Введите Ваше ФИО">
+                </label><br>
+
+                <label>
+                Номер телефона:<br>
+                <input name="field-tel"
+                    type="tel"
+                    placeholder="Введите Ваш номер телефона">
+                </label><br>
+
+                <label>
+                Почта e-mail:<br>
+                <input name="field-email"
+                    type="email"
+                    placeholder="Введите Вашу почту">
+                </label><br>
+
+                <label>
+                    Дата рождения:<br>
+                    <input name="field-date"
+                    type="date">
+                </label><br>
+                
+                Пол:<br>
+                <label><input type="radio"
+                name="radio-group-1" value="Значение1" checked="checked">
+                М</label>
+                <label><input type="radio"
+                name="radio-group-1" value="Значение2">
+                Ж</label><br>
+
+                <label>
+                    Любимый язык программирования:<br>
+                    <select name="field-name-2[]"
+                        multiple="multiple">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                </label><br>
+
+                <label>
+                    Биография:<br>
+                    <textarea name="field-name-3" placeholder="Напишите Вашу биографию"></textarea>
+                </label><br>
+
+                <label><input type="checkbox"
+                    name="check-1">
+                    С контрактом ознакомлен
+                </label><br>
+
+                <input type="submit" value="Сохранить">
+
+            </form>
+
+            <p class="order-4" id="anchor">ЯКОРЬ</p>
+
+        </main>
+
+        <footer>
+            <p>(c) Скиданов Александр</p>
+        </footer>
+            
+    </body>
+
+</html>
