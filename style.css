@@ -1,13 +1,16 @@
 html, body {
     background-color:rgb(108, 177, 235);
     color:rgb(14, 2, 67);
-    font-size: 20px;
     min-height: 100vh;
+    font-size: 18px;
 }
 
 header {
     background-color: rgb(45, 105, 236);
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:30px;
+    padding-right:30px;
     height: 110px;
 }
 
@@ -29,23 +32,23 @@ header p {
 }
 
 .nav_header{
-    background-color: rgb(45, 105, 236);
+    background-color: rgb(108, 177, 235);
+    padding-top:10px;
 }
 
 nav {
     background-color: rgb(45, 105, 236);
     border: 3px solid rgb(14, 2, 67);
-    padding-left: 30px;
-    padding-right: 30px;
-    position: absolute;
+    padding: 10px;
     right: 0px;
     top: 0px;
+    margin: auto;
 }
 
 nav a {
     margin: 5px;
     color: rgb(14, 2, 67);
-    font-size: 24px;
+    font-size: 20px;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
@@ -60,29 +63,29 @@ main {
 .ul_div {
     border: 3px solid rgb(14, 2, 67);
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     list-style-position: inside;
     margin-bottom: 10px;
+    background-color: rgb(45, 105, 236);
 }
 
 ul img {
-    width: 400px;
+    width: 40vw;
 }
 
 ul li {
-    margin: 10px;
+    margin: auto;
 }
 
 .table_div {
     border: 3px solid rgb(14, 2, 67);
     padding: 10px;
     margin: 10px auto;
+    background-color: rgb(45, 105, 236);
 }
 
 table {
     border: 3px solid rgb(14, 2, 67);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 th {
@@ -109,17 +112,21 @@ form {
     margin: 15px;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(45, 105, 236);
 }
 
 #anchor {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
+    margin: auto;
 }
 
 footer {
     background-color: rgb(45, 105, 236);
     padding: 10px;
     height: 110px;
+    display: flex;
+    align-items: flex-start;
 }
 
 footer p {
@@ -128,4 +135,12 @@ footer p {
     color: rgb(14, 2, 67);
     margin-left: 30px;
     margin-top: 30px;
+}
+
+a:link {
+    color: #06daf6; /* (не посещённая) */
+  }
+  
+a:visited {
+    color: #800080; /* (посещённая) */
 }
