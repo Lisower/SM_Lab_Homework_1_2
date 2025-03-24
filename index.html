@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>ЗАДАНИЕ 4</title>
+        <title>SM LAB Задания 1-2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet"
@@ -14,29 +14,24 @@
     </head>
 
     <body>
-        <div class="d-flex flex-column flex-md-row">
-            <header class="col-12 col-md-5">
-                <div class="d-flex row">
-                    <img src="./logo.png">
-                    <p>Сайт домашней работы</p>
-                </div>
-            </header>
-            <div class="nav_header col-12 col-md-7">
-                <nav class="d-flex col-12 flex-column flex-md-row justify-content-end">
-                    <a href="http://www.kubsu.ru" title="КубГУ" target="_blank">КубГУ</a>
-                    <a href="https://html5book.ru/html-html5/" title="HTML5 Руководство" target="_blank">HTML5 Руководство</a>
-                    <a href="https://ru.wikipedia.org/wiki/HTML" title="Страница о HTML на Вики" target="_blank">Страница о HTML на Вики</a>
-                </nav>
+        <header class="">
+            <div class="d-flex row justify-content-between justify-content-md-center">
+                <img src="./logo.png">
+                <p>SM LAB Задания 1-2</p>
             </div>
+        </header>
+
+        <div class="nav_header">
+            <nav class="d-flex flex-column flex-md-row justify-content-center col-12 col-md-9">
+                <a href="http://www.kubsu.ru" title="КубГУ" target="_blank">КубГУ</a>
+                <a href="https://html5book.ru/html-html5/" title="HTML5 Руководство" target="_blank">HTML5 Руководство</a>
+                <a href="https://ru.wikipedia.org/wiki/HTML" title="Страница о HTML на Вики" target="_blank">Страница о HTML на Вики</a>
+            </nav>
         </div>
 
-        <main class="d-flex flex-column align-items-center">
+        <main class="d-flex flex-column">
 
-            <h1>
-                ЗАДАНИЕ 4
-            </h1>
-
-            <div class="ul_div order-2 order-md-1 col-12 col-md-5">
+            <div class="ul_div order-1 col-12 col-md-9 justify-content-center">
 
                 <h1>
                     Список гиперссылок
@@ -78,7 +73,7 @@
 
             </div>
 
-            <div class="table_div order-1 order-md-2 col-12 col-md-5">
+            <div class="table_div order-3 order-md-2 col-12 col-md-9">
 
                 <table>
 
@@ -125,21 +120,15 @@
 
             </div>
 
-            <form class="order-3 col-12 col-md-5" action="/" method="POST">
+            <form class="order-2 order-md-3 col-12 col-md-9" action="/" method="POST">
                 
                 <h1>Форма</h1>
 
                 <label>
                     ФИО:<br>
                     <input name="field-name-1"
-                    placeholder="Введите Ваше ФИО">
-                </label><br>
-
-                <label>
-                Номер телефона:<br>
-                <input name="field-tel"
-                    type="tel"
-                    placeholder="Введите Ваш номер телефона">
+                    placeholder="Введите Ваше ФИО"
+                    value="Иванов Иван Иванович">
                 </label><br>
 
                 <label>
@@ -152,21 +141,18 @@
                 <label>
                     Дата рождения:<br>
                     <input name="field-date"
-                    type="date">
+                    type="date"
+                    value="2025-03-24">
                 </label><br>
-                
-                Пол:<br>
-                <label><input type="radio"
-                name="radio-group-1" value="Значение1" checked="checked">
-                М</label>
-                <label><input type="radio"
-                name="radio-group-1" value="Значение2">
-                Ж</label><br>
 
                 <label>
-                    Любимый язык программирования:<br>
-                    <select name="field-name-2[]"
-                        multiple="multiple">
+                    Биография:<br>
+                    <textarea name="field-name-2" placeholder="Напишите Вашу биографию">Какая-то биография...</textarea>
+                </label><br>
+
+                <label>
+                    Самый любимый язык программирования:<br>
+                    <select name="field-name-3">
                         <option value="Pascal">Pascal</option>
                         <option value="C">C</option>
                         <option value="C++">C++</option>
@@ -182,16 +168,37 @@
                 </label><br>
 
                 <label>
-                    Биография:<br>
-                    <textarea name="field-name-3" placeholder="Напишите Вашу биографию"></textarea>
+                    Любимые языки программирования:<br>
+                    <select name="field-name-4[]"
+                        multiple="multiple">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
                 </label><br>
+
+                Пол:<br>
+                <label><input type="radio"
+                name="radio-group-1" value="Значение1" checked="checked">
+                М</label>
+                <label><input type="radio"
+                name="radio-group-1" value="Значение2">
+                Ж</label><br>
 
                 <label><input type="checkbox"
                     name="check-1">
                     С контрактом ознакомлен
                 </label><br>
 
-                <input type="submit" value="Сохранить">
+                <input type="submit" value="Отправить">
 
             </form>
 
